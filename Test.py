@@ -56,10 +56,10 @@ while True:
             print(prediction)
             print(index)
 
-        cv2.putText(imgOutPut,labels[index],(x,y-26),cv2.FONT_HERSHEY_COMPLEX,2,(255,255,255),2)
+        cv2.putText(imgOutPut,labels[index],(x,y-25),cv2.FONT_HERSHEY_COMPLEX,2,(255,255,255),2)
         cv2.rectangle(imgOutPut,(x-offset,y-offset),(x+w+offset,y+h+offset),(255,255,255),4)
         cv2.imshow("ImageCrop", imgCrop)
         cv2.imshow("ImageWhite", imgWhite)
-    cv2.imshow("Image", img)
+    cv2.imshow("ImageOutPut", imgOutPut)
     key=cv2.waitKey(1)
 
